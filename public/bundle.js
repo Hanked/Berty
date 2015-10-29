@@ -85,7 +85,7 @@
 	          null,
 	          _react2['default'].createElement(
 	            'column',
-	            { cols: '4' },
+	            { 'data-cols': '4' },
 	            _react2['default'].createElement(
 	              'h1',
 	              null,
@@ -109,22 +109,7 @@
 	          ),
 	          _react2['default'].createElement(
 	            'column',
-	            { cols: '4' },
-	            _react2['default'].createElement(
-	              'span',
-	              { className: 'label' },
-	              'Label'
-	            ),
-	            _react2['default'].createElement(
-	              'span',
-	              { className: 'label label-default' },
-	              'Default'
-	            ),
-	            _react2['default'].createElement(
-	              'span',
-	              { className: 'label label-black' },
-	              'Black'
-	            ),
+	            { 'data-cols': '4' },
 	            _react2['default'].createElement(
 	              'span',
 	              { className: 'label label-primary' },
@@ -144,19 +129,14 @@
 	              'span',
 	              { className: 'label label-warning' },
 	              'Warning'
-	            ),
-	            _react2['default'].createElement(
-	              'span',
-	              { className: 'label label-white' },
-	              'White'
 	            )
 	          ),
 	          _react2['default'].createElement(
 	            'column',
-	            { cols: '4' },
+	            { 'data-cols': '4' },
 	            _react2['default'].createElement(
 	              'button',
-	              { small: true, outline: true, upper: true },
+	              { 'data-small': true, 'data-outline': true, 'data-upper': true },
 	              'Button'
 	            ),
 	            _react2['default'].createElement(
@@ -166,7 +146,7 @@
 	            ),
 	            _react2['default'].createElement(
 	              'button',
-	              { type: 'primary', small: true, outline: true, upper: true },
+	              { type: 'primary', 'data-small': true, 'data-outline': true, 'data-upper': true },
 	              'Button'
 	            )
 	          )
