@@ -1,3 +1,4 @@
 # Berty
 
-First push
+## Start/Watch App
+`webpack -w`
