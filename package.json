@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Hanked/Berty/issues"
   },
-  "homepage": "https://github.com/Hanked/Berty#readme"
+  "homepage": "https://github.com/Hanked/Berty#readme",
+  "dependencies": {
+    "react": "^0.14.1"
+  }
 }
