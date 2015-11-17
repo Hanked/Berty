@@ -1,4 +1,7 @@
 # Berty
 
 ## Start/Watch App
-`webpack -w`
+`npm run watch`
+
+## Preview Url
+`http://localhost:8080/`

@@ -1,0 +1,10 @@
+
+.flash {
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f5f5f5;
+
+  &.flash-warn {
+    color: red;
+  }
+}

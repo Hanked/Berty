@@ -1,15 +1,36 @@
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+function getEntrySources(sources) {
+    if (process.env.NODE_ENV !== 'production') {
+        sources.push('webpack-dev-server/client?http://localhost:8080');
+        sources.push('webpack/hot/only-dev-server');
+    }
+    return sources;
+}
+
 module.exports = {
-  entry: "./app/components/Main.js",
-  output: {
-    filename: "public/bundle.js"
+  entry: {
+    main: getEntrySources([
+      './app/components/Main.js'
+    ])
   },
+
+  output: {
+    publicPath: 'http://localhost:8080/',
+    filename: 'public/[name].js'
+  },
+
   module: {
     loaders: [
-      {
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel'
-      }
+      { test: /\.js$/, loaders: ['react-hot', 'jsx', 'babel'], exclude: /node_modules/ },
+      { test: /\.scss$/, loaders: ['style', 'css', 'sass'] }
     ]
-  }
+  },
+
+  plugins: [
+    new ExtractTextPlugin('public/[name].css', {
+      allChunks: true,
+    })
+  ]
+
 };
